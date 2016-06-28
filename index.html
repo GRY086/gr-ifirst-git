@@ -1,0 +1,50 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="style.css" />        
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <title>Serializer</title>
+    </head>
+    
+    <body>
+        
+        <form>
+            <section>
+                <input type='text' id='fname_1' name='fname_1' value='James'/>
+                <input type='text' id='email_1' name='email_1' value='Earl Jones'/>
+                <input type='text' id='unitx_1' name='unitx_1' value='100'/>
+                <input type='text' id='unity_1' name='unity_1' value='200'/>                
+            </section>
+            
+            <section>
+                <input type='text' id='fname_1' name='fname_1' value='Frank'/>
+                <input type='text' id='email_1' name='email_1' value='Metzer'/>
+                <input type='text' id='unitx_1' name='unitx_1' value='120'/>
+                <input type='text' id='unity_1' name='unity_1' value='220'/>                
+            </section>
+            
+            <section>
+                
+                <input type='text' id='fname_1' name='fname_1' value='Randal'/>
+                <input type='text' id='email_1' name='email_1' value='Tarly'/>
+                <input type='text' id='unitx_1' name='unitx_1' value='150'/>
+                <input type='text' id='unity_1' name='unity_1' value='250'/>                
+                
+            </section>
+            <input id = 'msub' type='submit' value='SEND'/>
+        </form>
+            
+        <script>
+            $(document).ready(function(){
+                console.log('ready');
+                $( "form" ).on( "submit", function( event ) {
+                    event.preventDefault();
+                    console.log("adding a line #2");
+                    console.log( $( this ).serialize() );
+                });
+            });
+        </script>
+    </body>
+    
+    
+</html>
