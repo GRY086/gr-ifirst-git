@@ -1,0 +1,29 @@
+
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body{background:#fff; margin:0px; font-family:arial;}
+
+form{
+    width:700px;
+    overflow: auto;
+    margin:auto;
+    display:block;
+    background:#eee;
+}
+
+form section{
+    padding:8px;
+    width:100%;    
+    float:left;
+    display:block;
+    border-bottom: solid 2px red;
+}
+
+form section input{width: 100%; margin:4px 0;}
+
+#msub{font-size: 2em; padding:10px;}
