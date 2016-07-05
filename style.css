@@ -6,7 +6,7 @@ html {
   box-sizing: inherit;
 }
 
-body{background:#fff; margin:0px; font-family:arial;}
+body{background:#blue; margin:0px; font-family:arial;}
 
 form{
     width:700px;
